@@ -283,7 +283,7 @@ namespace TurnBasedConsoleAdventureGame
                 }
                 else if (p.health <= 0)
                 {
-                    WriteMsg("Your have no more health. Press any key to continue.\n", ConsoleColor.DarkGray);
+                    WriteMsg("You have no more health. Press any key to continue.\n", ConsoleColor.DarkGray);
                     Console.ReadKey();
                     Console.Write("\b \b");
                     gameOver = true;
