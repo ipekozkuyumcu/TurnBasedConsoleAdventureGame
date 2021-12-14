@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HDFyWpCW84tWU76s/5LUal03v8sRxbdMQrvvsd5nikqArM5fHrkXMGPNO2EWa+criro/GbDb2CJAauIs1kiXgQ==",
+  "dgSpecHash": "F2ZlTp5xgyaHoTZkmByASy/iA/liDPo07ZT8dcLEydY3U+j4J4KBrBzaa9mhOVWMwpSgRAMqXLr/Gmwe/c2M8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
+  "projectFilePath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

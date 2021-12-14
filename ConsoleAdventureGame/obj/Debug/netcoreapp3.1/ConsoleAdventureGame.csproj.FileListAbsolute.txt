@@ -12,3 +12,17 @@ C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\ConsoleAdve
 C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.pdb
 C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.genruntimeconfig.cache
 C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.csproj.AssemblyReference.cache
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.exe
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.deps.json
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.runtimeconfig.json
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.runtimeconfig.dev.json
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.dll
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\bin\Debug\netcoreapp3.1\ConsoleAdventureGame.pdb
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.csproj.AssemblyReference.cache
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.AssemblyInfoInputs.cache
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.AssemblyInfo.cs
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.csproj.CoreCompileInputs.cache
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.dll
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.pdb
+C:\Users\ipeko\Desktop\SoftwareProjects\BAU\BasicProgramming\Midterm\TurnBasedConsoleAdventureGame\ConsoleAdventureGame\obj\Debug\netcoreapp3.1\ConsoleAdventureGame.genruntimeconfig.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj": {}
+    "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj": {
+    "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
+        "projectUniqueName": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
         "projectName": "ConsoleAdventureGame",
-        "projectPath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
+        "projectPath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\ConsoleAdventureGame.csproj",
         "packagesPath": "C:\\Users\\ipeko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\ConsoleAdventureGame\\obj\\",
+        "outputPath": "C:\\Users\\ipeko\\Desktop\\SoftwareProjects\\BAU\\BasicProgramming\\Midterm\\TurnBasedConsoleAdventureGame\\ConsoleAdventureGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
