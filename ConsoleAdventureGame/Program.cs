@@ -2,6 +2,11 @@
 
 namespace TurnBasedConsoleAdventureGame
 {
+
+    //İpek Özkuyumcu 1730352
+    //Zeynep Yazıcı 1906805
+    //Implemented all together. 
+
     class Program
     {
         static void Main(string[] args)
@@ -35,7 +40,7 @@ namespace TurnBasedConsoleAdventureGame
             Console.ReadKey();
             Console.Write("\b \b");
 
-            Player p = new Player(150, 200, 10, 1); //mana, health, attack, lvl
+            Player p = new Player(200, 500, 20, 1); //mana, health, attack, lvl
 
             Enemy e = new Enemy(100, 10, 0); //health, attack, magic resistance
 
@@ -104,7 +109,7 @@ namespace TurnBasedConsoleAdventureGame
                 {
                    WriteMsg("Press -A- for Sword Attack (hits the enemy with your attack value),\n" +
                         "Press -M- for Magic Strike (hits the enemy with your attack value +2) (costs 5 mana),\n" +
-                        "Press -P- for Poison Spell (hits the enemy with your attack value +2, enemy can't hit you back) (costs 10 mana),\n"+
+                        "Press -P- for Poison Spell (hits the enemy with your attack value +2, enemy can't hit you back) (costs 15 mana),\n"+
                         "Press -H- for Healing Spell (restores 10 health) (costs 7 mana),\n" +
                         "Press -R- to Restore Mana (restores 10 mana),\n" +
                         "Press -Q- to exit the game.\n", ConsoleColor.Blue);
@@ -168,10 +173,10 @@ namespace TurnBasedConsoleAdventureGame
                     }
                     else if (userKey == ConsoleKey.P)
                     {
-                        //Poison Spell (can't if magic resistance) (attack +2) (10 mana)
+                        //Poison Spell (can't if magic resistance) (attack +2) (15 mana)
                         if (e.magicResist == 0)
                         {
-                            p.mana = p.mana - 10;
+                            p.mana = p.mana - 15;
                             WriteMsg("You have attacked the enemy " + (p.attack + 2) + " using Poison Spell. Enemy can only attack you with half damage this turn.\n", ConsoleColor.Cyan);
                             e.health = e.health - (p.attack + 2);
                             WriteMsg("Enemy hit you with " + e.attack/2 + "!\n", ConsoleColor.Red);
@@ -214,10 +219,13 @@ namespace TurnBasedConsoleAdventureGame
                         break;
                     }
                     
-                    e.attack = e.attack + 3;
+                    e.attack = e.attack + 2;
 
                 }
 
+                if (gameOver == true)
+                    break;
+                
                 if(p.health > 0)
                 {
                     p.lvl++;
@@ -244,20 +252,23 @@ namespace TurnBasedConsoleAdventureGame
                         p.health = p.health + 50;
                         WriteMsg("You have gain 50 health. Your health is " + p.health + " now. Press any key to continue to next level.\n", ConsoleColor.DarkMagenta);
                         Console.ReadKey();
+                        Console.Write("\b \b");
                     }
                     else if (userKey == ConsoleKey.B)
                     {
                         //gain 25 mana
                         p.mana = p.mana + 25;
-                        WriteMsg("You have gain 25 mana. Your mana is " + p.mana + " now\n", ConsoleColor.DarkMagenta);
+                        WriteMsg("You have gain 25 mana. Your mana is " + p.mana + " now. Press any key to continue to next level.\n", ConsoleColor.DarkMagenta);
                         Console.ReadKey();
+                        Console.Write("\b \b");
                     }
                     else if (userKey == ConsoleKey.C)
                     {
                         //gain 10 attack
                         p.attack = p.attack + 10;
-                        WriteMsg("You have gain 10 attack. Your health is " + p.attack + " now\n", ConsoleColor.DarkMagenta);
+                        WriteMsg("You have gain 10 attack. Your attack is " + p.attack + " now. Press any key to continue to next level.\n", ConsoleColor.DarkMagenta);
                         Console.ReadKey();
+                        Console.Write("\b \b");
                     }
 
 
