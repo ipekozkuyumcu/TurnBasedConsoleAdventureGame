@@ -2,63 +2,40 @@
 
 namespace TurnBasedConsoleAdventureGame
 {
-    struct Player
-    {
-        public int mana;
-        public int health;
-        public int attack;
-        public int lvl;
-
-        public Player(int mana, int health, int attack, int lvl)
-        {
-            this.mana = mana;
-            this.health = health;
-            this.attack = attack;
-            this.lvl = lvl;
-        }
-
-        public void showStats()
-        {
-            Console.WriteLine("Player health is: " + health);
-            Console.WriteLine("Player mana is: " + mana);
-            Console.WriteLine("Player attack is: " + attack + "\n");
-        }
-        public void showLvl()
-        {
-            Console.WriteLine("Player level is: " + lvl + "\n");
-        }
-    }
-
-    struct Enemy
-    {
-        public int health;
-        public int attack;
-        public int magicResist;
-
-        public Enemy(int health, int attack, int magicResist)
-        {
-            this.health = health;
-            this.attack = attack;
-            this.magicResist = magicResist;
-        }
-
-        public void showStats()
-        {
-            Console.WriteLine("Enemy health is: " + health);
-            Console.WriteLine("Enemy attack is: " + attack + "\n");
-        }
-    }
-
-
     class Program
     {
         static void Main(string[] args)
         {
-            //Welcome
+            WriteMsg("Welcome to an endless dungeon!\n" +
+                "This is you: \n", ConsoleColor.DarkMagenta);
+
+            Console.WriteLine(@" 
+             ////^\\\\
+             | ^   ^ |
+            @ (o) (o) @
+             |   <   |
+             |  ___  |
+              \_____/
+            ____|  |____
+           /    \__/    \
+          /              \
+         /\_/|        |\_/\
+        / /  |        |  \ \
+       ( <   |        |   > )
+        \ \  |        |  / /
+         \ \ |________| / /
+           
+             
+                              ");
+
+            WriteMsg("You will face enemies which gets stronger each turn and level.\n" +
+                "Read instructions carefully and choose wisely.\n" +
+                "Good Luck!\n\n" +
+                "Press any key to start.\n", ConsoleColor.DarkMagenta);
+            Console.ReadKey();
+            Console.Write("\b \b");
+
             Player p = new Player(150, 200, 10, 1); //mana, health, attack, lvl
-            //this is you ascii art
-            //rules
-            //starting -press any key
 
             Enemy e = new Enemy(100, 10, 0); //health, attack, magic resistance
 
@@ -80,7 +57,41 @@ namespace TurnBasedConsoleAdventureGame
 
                 //enemy ascii art, if magic resistance different
                 if (e.magicResist == 1)
-                    Console.WriteLine("Enemy is magic resistant!\n");
+                {
+                    Console.WriteLine(@" 
+                       ,    ,    /\   /\
+                      /( /\ )\  _\ \_/ /_
+                      |\_||_/| < \_   _/ >
+                      \______/  \|0   0|/
+                        _\/_   _(_  ^  _)_
+                       ( () ) /`\|V'''V |/`\
+                         {}   \  \_____/  /
+                         ()   /\   )=(   /\
+                         {}  /  \_/\=/\_/  \");
+
+                    Console.WriteLine("Enemy above is what you you will face with. It is magic resistant! You can't apply spell damage. \n");
+                }
+                else if(e.magicResist == 0)
+                {
+                    Console.WriteLine(@"         
+                          .-.
+                         (o.o)
+                          |=|
+                         __|__
+                       //.=|=.\\
+                      // .=|=. \\
+                      \\ .=|=. //
+                       \\(_=_)//
+                        (:| |:)
+                         || ||
+                         () ()
+                         || ||
+                         || ||
+                        ==' '==");
+
+                    Console.WriteLine("You will face with not magic resistant enemy above. You can apply spell damage.\n");
+                }
+                    
 
                 WriteMsg("Beginning stats: ", ConsoleColor.Green);
                 e.showStats();
@@ -256,22 +267,21 @@ namespace TurnBasedConsoleAdventureGame
                     enemiesSlain++;
                     WriteMsg("Your have no more health. Press any key to continue.\n", ConsoleColor.DarkGray);
                     Console.ReadKey();
+                    Console.Write("\b \b");
                     gameOver = true;
                 }
                 else if (p.health <= 0)
                 {
                     WriteMsg("Your have no more health. Press any key to continue.\n", ConsoleColor.DarkGray);
                     Console.ReadKey();
+                    Console.Write("\b \b");
                     gameOver = true;
                 }
 
             } while (!gameOver);
 
-
-            //score
-           
-
-            
+            WriteMsg("Game is over.\n" +
+                "Your score is: " + enemiesSlain, ConsoleColor.DarkMagenta);
 
         }
 
@@ -282,4 +292,52 @@ namespace TurnBasedConsoleAdventureGame
             Console.ResetColor();
         }
     }
+
+    struct Player
+    {
+        public int mana;
+        public int health;
+        public int attack;
+        public int lvl;
+
+        public Player(int mana, int health, int attack, int lvl)
+        {
+            this.mana = mana;
+            this.health = health;
+            this.attack = attack;
+            this.lvl = lvl;
+        }
+
+        public void showStats()
+        {
+            Console.WriteLine("Player health is: " + health);
+            Console.WriteLine("Player mana is: " + mana);
+            Console.WriteLine("Player attack is: " + attack + "\n");
+        }
+        public void showLvl()
+        {
+            Console.WriteLine("Player level is: " + lvl + "\n");
+        }
+    }
+
+    struct Enemy
+    {
+        public int health;
+        public int attack;
+        public int magicResist;
+
+        public Enemy(int health, int attack, int magicResist)
+        {
+            this.health = health;
+            this.attack = attack;
+            this.magicResist = magicResist;
+        }
+
+        public void showStats()
+        {
+            Console.WriteLine("Enemy health is: " + health);
+            Console.WriteLine("Enemy attack is: " + attack + "\n");
+        }
+    }
+
 }
